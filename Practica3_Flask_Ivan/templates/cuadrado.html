@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="encabezado">
+    <h1>Calculadora Geométrica con Flask</h1>
+    <nav class="menu">
+         <a href="/cuadrado">Cuadrado</a>
+    </nav>
+</header>
+
+<main class="contenedor">
+    <section class="tarjeta-operacion">
+        <h2>Cálculos del Cuadrado</h2>
+
+        <form method="POST">
+            <label for="lado">Medida del lado</label>
+            <input id="lado" name="lado" type="number" step="any" required>
+
+            <button class="boton" type="submit">
+                Calcular
+            </button>
+        </form>
+
+        {% if area is not none and perimetro is not none %}
+            <div class="resultados">
+                <p class="resultado"><strong>Área:</strong> {{ area }}</p>
+                <p class="resultado"><strong>Perímetro:</strong> {{ perimetro }}</p>
+            </div>
+        {% endif %}
+    </section>
+</main>
+
+</body>
+</html>

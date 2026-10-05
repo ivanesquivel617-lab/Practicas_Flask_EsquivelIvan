@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f3; /* Gris claro de fondo */
+    color: #2b2d42; /* Texto oscuro */
+}
+
+/* 1. Cambiar los colores de la interfaz (Nuevo encabezado Verde Esmeralda) */
+.encabezado {
+    background-color: #0f4c5c; 
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.contenedor {
+    width: min(700px, 92%);
+    margin: 35px auto;
+}
+
+.tarjeta-operacion {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+/* 1. Cambiar color del botón (Naranja Coral para contrastar) */
+.boton {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fb8b24; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover {
+    opacity: 0.9;
+}
+
+/* 2. Estilo para el nuevo texto explicativo */
+.explicacion {
+    color: #6c757d;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.resultado {
+    margin-top: 22px;
+    padding: 14px;
+    background: #e8f5e9;
+    color: #1b5e20;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.error {
+    margin-top: 22px;
+    padding: 14px;
+    background: #ffebee;
+    color: #c62828;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        display: block;
+        margin: 8px 0;
+    }
+}
